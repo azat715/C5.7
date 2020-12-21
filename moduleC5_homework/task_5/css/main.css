@@ -45,38 +45,45 @@ h1, .address, .logo, aside .main_wrapper, div {
     position: relative;
     max-width: 500px;
     margin: 50px auto 0;
-    background: white;
-    border-radius: 30px;
   }
 
-.form_wrapper input {
+.form_wrapper form input {
     display: block;
     width: 50px;
     padding: 0 20px;
     margin: 10px;
     background: #E9EFF6;
     line-height: 40px;
-    border-width: 0;
+    border-width: 0.5px;
     border-radius: 20px;
 }
 
-
-/* .decor span {
-    display: block;
-    
-} */
-
 .hint_1, .hint_2, .hint_3 {
     display: block;
-    width: 100%;
-    visibility: hidden
+    font: 10pt sans-serif;
+    visibility: hidden;
 }
 
-.form_wrapper input:focus:invalid {
+.hint_1, .hint_2 {
+    position: relative;
+    bottom: 35px;
+    left: 120px;
+}
+
+.hint_3 {
+    position: relative;
+    bottom: 20px;
+}
+
+.form_wrapper span::before {
+    content: "\261A";
+  }
+
+.form_wrapper form input:invalid {
     border-color: red;
 }
 
-.form_wrapper input:valid {
+.form_wrapper form input:valid {
     border-color: green;
 }
 
@@ -135,6 +142,9 @@ footer {
     .main_wrapper  {
         max-width: 1140px;
     }
+    .form_wrapper {
+        margin: 50px 100px 0;
+      }
 }
 
 @media (max-width: 768px) {

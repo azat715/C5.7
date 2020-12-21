@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>С5.7. moduleC5_homework</title>
+    <title>С5.3. XHR</title>
     <meta name="description" content="Учебный пример">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -22,19 +22,18 @@
 	
 	<main>
 		<div class="main_wrapper">
-			<h1>С5.7. moduleC5_homework</h1>
+			<h1>С5.3. XHR</h1>
+			<h4>Задача 3</h4>
 			<div class="container_wrapper">
 				<div class="form_wrapper">
-							<form action="#" novalidate>
-								<label for="input_1">номер страницы:</label>
-								<input type="number" min="1" max="10" id="input_1" required>
-								<span class="hint_1">Номер страницы вне диапазона от 1 до 10</span>
-								<label for="input_2">лимит:</label>
-								<input type="number" min="1" max="10" id="input_2" required>
-								<span class="hint_2">Лимит вне диапазона от 1 до 10</span>
-								<span class="hint_3">Номер страницы и лимит вне диапазона от 1 до 10</span>
-								<button type="button" name="j-bt">запрос</button>
-							</form>
+					<div class="decor">
+						<div class="form-inner">
+							<h3>Введите число</h3>
+							<input type="number" inputmode="numeric" min="1" max="10" value="1" id="input" required name="form_input">
+							<span class="hint">Введите число от 1 до 10</span>
+							<button type="button" name="j-bt">Клик ме</button>
+						</div>
+					</div>
 				</div>
 				<div class='images'>
 				</div>
